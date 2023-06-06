@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../html5up-paradigm-shift/images"
+		},
+		{
+			"path": "../html5up-paradigm-shift/assets"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "budhranirahul.github.io"
+	}
+}
