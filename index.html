@@ -66,32 +66,39 @@
 				
 						</div>
 					</section>
+					
 					<section id="Cert">
 						<header>
 							<h2>Certificate</h2>
 						</header>
-						<div class="content">
+					<div class="content">
 							<p><strong>Google Professional Data Analytics Certificate</strong></p>
-							<img id="image" src="" />
 						
-							<button type="button" onclick="show()" id="btnID">
-								Show Certificate <link href="images/Google_Professional_Data_Analytics_Cert.jpg" alt=""/>
-							</button>	
-						</div>
+					
+							<input type="button" value="Show Certificate" class="btn-group btn-action"/>
+					
+							<img src="images/Google_Professional_Data_Analytics_Cert.jpg"  id="image-Show Certificate" class="image-group">
 						
-							
-							
-						
-							<script>
-								function show() {
-									
-									let image = document.getElementById("image");
-									image.src ="images/Google_Professional_Data_Analytics_Cert.jpg" 
-									document.getElementById("btnID")
-										.style.display = "none";
-									}
-								
-							</script>				
+					</div>
+						<script>
+							let btns = document.getElementsByClassName('btn-action')
+	for(let i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function() {
+	hideImage(btns[i].value);
+	})
+	}
+	
+	function hideImage(letter="Show Certificate"){
+	let id = "image-" + letter;
+	let img = document.getElementById(id)
+	if(img.style.display === "none") {
+	img.style.display = "block";
+	}
+	else {
+	img.style.display = "none";
+	}
+	}
+						</script>			
 					</section>
 					
 
@@ -113,6 +120,7 @@
 										</ul>
 										<p>I WILL UPDATE THIS BIT</p>
 									</div>
+
 								</section>	
 
 				<!-- Elements -->
